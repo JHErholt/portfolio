@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my online portfolio",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch src/scss:public/css",
+    "build:sass": "sass src/scss:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHErholt/portfolio.git"
+  },
+  "author": "jacob erholt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JHErholt/portfolio/issues"
+  },
+  "homepage": "https://github.com/JHErholt/portfolio#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.71.1"
+  }
+}
